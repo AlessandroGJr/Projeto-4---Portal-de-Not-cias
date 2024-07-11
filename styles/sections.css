@@ -2,10 +2,10 @@
     img {
         height: 100%;
         object-fit: cover;
+        border-radius: 4px;
     }
     
     .card {
-        border-radius: 4px;
         position: relative;
         &::before {
             content: "";
@@ -13,6 +13,20 @@
             inset: 0;
             top: 50%;
             background: linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, #020617 100%);
+        }
+        
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            padding: 24px;
+            
+            &:has(.text-lg) {
+                padding: 12px;
+            }
+
+            h2  {
+                margin-top: 8px;
+            }
         }
 
     }
