@@ -33,6 +33,9 @@
 }
 
 .text-sm {
-    font: var(--text-span);
+    font: var(--text-sm);
 }
 
+.text-sp {
+    font: var(--text-span);
+}

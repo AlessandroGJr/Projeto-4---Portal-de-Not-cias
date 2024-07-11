@@ -1,12 +1,13 @@
 section header {
     border-top: 1px solid var(--stroke-color);
     padding-block: 12px 24px;
-    font: var(--text-span);
+    font: var(--text);
 
     a {
         justify-self: end;
         align-items: center;
         gap: 8px;
+        
         
         span {
             background-image: url(../assets/icons/ArrowRight.svg);
@@ -89,6 +90,12 @@ section header {
 
 #ai {
     grid-area: ai;
+    
+
+
+    article div:nth-child(1){
+        padding-block: 6px;
+    }
 
     img {
         width: 176px;
@@ -96,7 +103,7 @@ section header {
         object-fit: cover;
     }
 
-    h3 {
+    h2 {
         margin-block: 8px 4px;
     }
 }
@@ -105,9 +112,20 @@ aside {
     grid-area: aside;
 }
 
-#more {
+#more { 
+    margin-top: 32px;
+
+    article {
+        height: 72px;
+    }
+
     img {
         width: 72px;
-        height: 72px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin-top: 8px;
     }
 }
